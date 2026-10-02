@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audios_favoritos</title>
+    <link rel="stylesheet" href="audios_favoritos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="audios_favoritos.js" defer></script>
+</head>
+<body>
+    <!------------------------------------->
+    <!--|estructuracion_audios_favoritos|-->
+    <!------------------------------------->
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-headphones"></i>
+        </div>
+        <div>
+            <span class="etiqueta">MI BIBLIOTECA</span>
+            <h1>Audios Favoritos</h1>
+            <p>Escucha y administra tus audios favoritos.</p>
+        </div>
+    </header>
+    <!---------------------------------------->
+    <!--|estructuracion_contenido_mis_audio|-->
+    <!---------------------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <div class="icono_intro">
+                <i class="fa-solid fa-music"></i>
+            </div>
+            <div>
+                <h2>Mis audios</h2>
+                <p>Personaliza la información de cada reproductor.</p>
+            </div>
+        </section>
+        <!---------------------------->
+        <!--|lista_de_reproductores|-->
+        <!---------------------------->
+        <section class="lista_audios">
+            <article class="audio" data-id="1">
+                <div class="cabecera_audio">
+                    <div class="numero_audio">01</div>
+                    <div class="icono_audio">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <div>
+                        <span>Audio favorito</span>
+                        <h2 class="titulo_audio">Audio 1</h2>
+                    </div>
+                </div>
+                <audio class="reproductor" controls></audio>
+                <div class="datos_audio">
+                    <label>Título</label>
+                    <input type="text" class="campo_titulo">
+                    <label>Artista</label>
+                    <input type="text" class="campo_artista">
+                    <label>Categoría</label>
+                    <input type="text" class="campo_categoria">
+                    <label>Archivo de audio</label>
+                    <input type="file" class="campo_audio" accept="audio/*">
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_audio"></p>
+                </div>
+            </article>
+            <article class="audio" data-id="2">
+                <div class="cabecera_audio">
+                    <div class="numero_audio">02</div>
+                    <div class="icono_audio">
+                        <i class="fa-solid fa-headphones-simple"></i>
+                    </div>
+                    <div>
+                        <span>Audio favorito</span>
+                        <h2 class="titulo_audio">Audio 2</h2>
+                    </div>
+                </div>
+                <audio class="reproductor" controls></audio>
+                <div class="datos_audio">
+                    <label>Título</label>
+                    <input type="text" class="campo_titulo">
+                    <label>Artista</label>
+                    <input type="text" class="campo_artista">
+                    <label>Categoría</label>
+                    <input type="text" class="campo_categoria">
+                    <label>Archivo de audio</label>
+                    <input type="file" class="campo_audio" accept="audio/*">
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_audio"></p>
+                </div>
+            </article>
+            <article class="audio" data-id="3">
+                <div class="cabecera_audio">
+                    <div class="numero_audio">03</div>
+                    <div class="icono_audio">
+                        <i class="fa-solid fa-radio"></i>
+                    </div>
+                    <div>
+                        <span>Audio favorito</span>
+                        <h2 class="titulo_audio">Audio 3</h2>
+                    </div>
+                </div>
+                <audio class="reproductor" controls></audio>
+                <div class="datos_audio">
+                    <label>Título</label>
+                    <input type="text" class="campo_titulo">
+                    <label>Artista</label>
+                    <input type="text" class="campo_artista">
+                    <label>Categoría</label>
+                    <input type="text" class="campo_categoria">
+                    <label>Archivo de audio</label>
+                    <input type="file" class="campo_audio" accept="audio/*">
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_audio"></p>
+                </div>
+            </article>
+        </section>
+        <!----------------------------->
+        <!--|accion_restablecer_todo|-->
+        <!----------------------------->
+        <section class="acciones">
+            <button id="boton_restablecer"><i class="fa-solid fa-trash"></i>Restablecer todos</button>
+            <p id="mensaje_general"></p>
+        </section>
+    </main>
+</body>
+</html>
